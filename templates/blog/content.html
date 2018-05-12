@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}blog article{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>{{article.title}}</h1>
+</div>
+<div class="row">
+<div class="col-xs-12 col-md-8">
+<p class="text-center"><span>{{ article.author.username }}</span><span style="margin-left: 20px">{{ publish }}</span></p>
+<div>{{ article.body }}</div>
+</div>
+<div class="col-xs-6 col-md-4">
+<h2>老婆</h2>
+<p>新垣结衣</p>
+<img src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=301d71e34190f60304b09b410129d426/91ef76c6a7efce1b27893518a451f3deb58f6546.jpg">
+</div>
+</div>
+{% endblock %}
